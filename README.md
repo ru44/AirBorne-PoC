@@ -5,7 +5,7 @@
 
 AirBorne is a combined proof-of-concept (PoC) framework targeting two serious vulnerabilities in Apple's AirPlay service. It includes a full crash trigger and a working reverse shell exploit with optional persistence, listener, and multiple payload formats — all in one script.
 
-> 💾 **Looking for the original version?**  
+>  **Looking for the original version?**  
 > The legacy edition is still available in the `legacy` branch of this repository.  
 > To check it out:
 
@@ -17,11 +17,11 @@ git checkout legacy
 
 ## CVEs Covered
 
-### ✅ CVE-2025-24252 – mDNS TXT Record Crash
+###  CVE-2025-24252 – mDNS TXT Record Crash
 - Triggers a crash in the AirPlayReceiver daemon via a malformed mDNS packet
 - Works over UDP broadcast on port 5353
 
-### ✅ CVE-2025-24132 – Heap Overflow → Reverse Shell (RCE)
+###  CVE-2025-24132 – Heap Overflow → Reverse Shell (RCE)
 - Triggers a heap overflow in AirPlay's TCP service on port 7000
 - Supports bash, python, and PowerShell reverse shell payloads
 - Includes optional persistence using `.bashrc` injection (Linux)
